@@ -8,15 +8,33 @@
 4. **DO NOT** initialize with README, .gitignore, or license (we already have these)
 5. Click "Create repository"
 
-## Step 2: Push Your Code
+## Step 2: Authenticate with GitHub
 
-After creating the repository, run:
+You need to authenticate before pushing. Choose one method:
+
+### Option A: Personal Access Token (Recommended)
+1. Go to GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic)
+2. Generate new token (classic)
+3. Select scopes: `repo` (full control of private repositories)
+4. Copy the token
+5. When pushing, use the token as your password (username is your GitHub username)
+
+### Option B: SSH Key
+1. Generate SSH key: `ssh-keygen -t ed25519 -C "your_email@example.com"`
+2. Add to GitHub: Settings → SSH and GPG keys → New SSH key
+3. Update remote: `git remote set-url origin git@github.com:charleytidwell-afk/Injury-Reporting.git`
+
+## Step 3: Push Your Code
+
+After authenticating, run:
 
 ```bash
-git remote add origin https://github.com/charleytidwell-afk/Injury-Reporting-App.git
+git remote add origin https://github.com/charleytidwell-afk/Injury-Reporting.git
 git branch -M main
 git push -u origin main
 ```
+
+**Note**: If you get a 403 error, you'll be prompted for credentials. Use your GitHub username and Personal Access Token as the password.
 
 ## Step 3: Enable GitHub Pages
 

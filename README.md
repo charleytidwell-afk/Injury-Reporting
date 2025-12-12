@@ -1,6 +1,8 @@
 
 # Injury and Illness Reporting App
 
+Deployed at: https://charleytidwell-afk.github.io/Injury-Reporting/
+
 This is a code bundle for Injury and Illness Reporting App. The original project is available at https://www.figma.com/design/WZcQy2O162ahWiFUtZpYcr/Injury-and-Illness-Reporting-App.
 
 ## Features

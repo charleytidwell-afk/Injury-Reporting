@@ -2,6 +2,7 @@
   "name": "Injury and Illness Reporting App",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://charleytidwell-afk.github.io/Injury-Reporting-App",
   "dependencies": {
     "@azure/msal-browser": "^4.27.0",
     "@azure/msal-react": "^3.0.23",
@@ -56,6 +57,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "preview": "vite preview"
   }
 }
